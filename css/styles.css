@@ -6,7 +6,7 @@
     --graphite: #303030;
     --light-graphite: #555555;
     --orange-text: #FF6C00;
-    --back-light-grey: rgba (247, 247, 247, 1)
+    --back-light-grey: #F7F7F7;
 }
 
 body {
@@ -26,29 +26,150 @@ body {
 }
 
 .hero {
-    background:cadetblue;
+    background:black;
+    color:var(--grey-text-op60);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
 }
 .hero-btn {
-    background-color: coral;}
+    background-color: coral;
+    color:var(--grey-text-op60);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;}
 
 .title {
-    width: 200px;
-    height :50px;
-    font-weight: 700px;
+    color:var(--graphite);
+    font-weight: 700;
     font-size: 36px;
     line-height: 42px;
-    text-align: center;
     font-family: 'Raleway', sans-serif;
 }
 
 .adr-btn {
-    border: 5px solid salmon;
+    /* border: 5px solid salmon; */
     padding: 20px;
     display:inline-block;
     /* height: 20px;
     width: 20px; */
     margin-right: 50px;
-    background-color:turquoise;
+    /* background-color:turquoise; */
     vertical-align: middle;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
     
+}
+
+nav {
+    color: var(--white-text);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.main-title {
+    color:var(--white-text);
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 85px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.hero-motto {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.section-paragraph {
+    color:var(--light-graphite);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.paragraph-caps {
+    color:var(--graphite);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.paragraph-caps-grey {
+    color:var(--grey-text-op60);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.paragraph {
+    color: var(--light-graphite);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.title-prices {
+    color:var(--white-text);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.prices {
+    color: var(--grey-text-op60);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.section-prices {
+    background-color: black;
+}
+
+.workers {
+    background-color: var(--back-light-grey);
+}
+
+.final-section {
+    background-color: black;
+}
+
+.numbers {
+    color:var(--graphite);
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 57px;
+}
+
+.numbers-item {
+    color:var(--graphite);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+} 
+
+.name {
+    color:var(--graphite);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.position {
+    color: var(--orange-text);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.sign-online {
+    color:var(--white-text);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 49px;
+    font-family: 'Raleway', sans-serif;
 }
