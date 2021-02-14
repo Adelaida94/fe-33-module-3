@@ -13,16 +13,24 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.header {
+header {
     background-color: black;
-    color: var(--orange-text);
+    /* color: var(--orange-text); */
 }
 
-.header a {
+.header-item {
     /* color: white; */
     /* color: inherit; */
     /* color: currentColor; */
     color: var(--white-text);
+}
+
+.sign-online:hover {
+    background-color:var(--orange-text);
+}
+
+.header-item:hover {
+    color:var(--orange-text);
 }
 
 .hero {
@@ -33,11 +41,17 @@ body {
     line-height: 15px;
 }
 .hero-btn {
-    background-color: coral;
+    background-color:transparent;
+    border: none;
     color:var(--grey-text-op60);
     font-weight: 600;
     font-size: 11px;
-    line-height: 15px;}
+    line-height: 15px;
+}
+
+.hero-btn:hover {
+    color:var(--white-text);
+}
 
 .title {
     color:var(--graphite);
@@ -47,20 +61,20 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-.adr-btn {
-    /* border: 5px solid salmon; */
+/* .adr-btn { */
+    /* border: 5px solid salmon;
     padding: 20px;
     display:inline-block;
     /* height: 20px;
     width: 20px; */
-    margin-right: 50px;
+    /* margin-right: 50px; */
     /* background-color:turquoise; */
-    vertical-align: middle;
+    /* vertical-align: middle;
     font-weight: 600;
-    font-size: 11px;
-    line-height: 15px;
+    font-size: 11px; */
+    /* line-height: 15px; */ */
     
-}
+/* } */
 
 nav {
     color: var(--white-text);
@@ -109,6 +123,7 @@ nav {
     font-weight: 400;
     font-size: 14px;
     line-height: 26px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .title-prices {
@@ -168,8 +183,90 @@ nav {
 
 .sign-online {
     color:var(--white-text);
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 49px;
+    display: inline-block;
     font-family: 'Raleway', sans-serif;
+    border: 1px solid var(--orange-text);
+    border-radius: 25px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    background: transparent;
+}
+
+
+
+.sign-online-black {
+    color:var(--graphite);
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid var(--orange-text);
+    border-radius: 25px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    background: transparent;
+}
+.sign-online-black:hover {
+    background-color:var(--orange-text);
+}
+.message-box {
+    color:var(--grey-text-op40);
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--grey-text-op40);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+
+.adr-btn {
+    color:var(--grey-text);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+
+.copy {
+    color:var(--grey-text);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.social-netw {
+    color:var(--graphite);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+}
+.social-netw:link {
+    text-decoration: none;
+}
+
+.social-netw:visited {
+    text-decoration: none;
+}
+
+.work-hours {
+    color:var(--white-text);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    font-family: 'Open Sans', sans-serif;
 }

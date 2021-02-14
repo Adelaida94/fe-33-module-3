@@ -300,3 +300,11 @@ summary {
 ul {
   list-style: none;
 }
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
