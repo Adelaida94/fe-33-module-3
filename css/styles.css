@@ -114,18 +114,24 @@ body {
     background:transparent;
 }
 
+.contact-list {
+    margin-left: 322px;
+}
 
-.hero {
+
+.hero .container {
     background:black;
     color:var(--grey-text-op60);
+    padding-left: 215px;
+
 }
 .pretitle {
-color:var(--grey-text-op60);
-font-weight: 600;
-font-size: 11px;
-line-height: 15px;
-letter-spacing: 0.1em;
-text-transform: uppercase;
+    color:var(--grey-text-op60);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 .main-title {
