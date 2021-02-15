@@ -9,37 +9,135 @@
     --back-light-grey: #F7F7F7;
 }
 
+header,
+section,
+footer {
+    border:1px solid;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
-header {
-    background-color: black;
-    /* color: var(--orange-text); */
+.container {
+    width:1200px;
+    padding: 0 15px;
+    border: 1px solid #FF6C00;
+
 }
 
-.header-item {
+.header {
+    background-color: black;
+    /* color: var(--orange-text); */
+    position:relative;
+
+}
+
+.header-nav {
+    color: var(--white-text);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    
+}
+
+.header-nav,
+.nav-list,
+.contact-list,
+.social-netw {
+    display: flex;
+}
+
+.header-nav {
+    justify-content: space-between;
+    align-items: center;
+    padding-top:28px;
+}
+
+.social-netw {
+    position: absolute;
+}
+
+.nav-list li {
+    margin-left: 40px;
+}
+
+.contact-list li:last-child {
+    margin-left: 40px;
+}
+
+.contact-list {
+    align-items: center;
+}
+
+.nav-link {
     /* color: white; */
     /* color: inherit; */
     /* color: currentColor; */
     color: var(--white-text);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
 }
 
-.sign-online:hover {
-    background-color:var(--orange-text);
-}
-
-.header-item:hover {
+.nav-link.current {
     color:var(--orange-text);
 }
+
+
+.nav-link:hover {
+    color:var(--orange-text);
+}
+
+.nav-link-sn {
+    color: var(--graphite);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.2em;
+}
+
+.nav-link-sn:hover {
+    color:var(--orange-text);
+}
+
+.contact-list a {
+    color: var(--white-text);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+}
+.contact-list a:hover {
+    color:var(--orange-text);
+    background:transparent;
+}
+
 
 .hero {
     background:black;
     color:var(--grey-text-op60);
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 15px;
 }
+.pretitle {
+color:var(--grey-text-op60);
+font-weight: 600;
+font-size: 11px;
+line-height: 15px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+}
+
+.main-title {
+    color:var(--white-text);
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 85px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 85px;
+    letter-spacing: 0.05em;
+}
+
 .hero-btn {
     background-color:transparent;
     border: none;
@@ -47,6 +145,7 @@ header {
     font-weight: 600;
     font-size: 11px;
     line-height: 15px;
+    letter-spacing: 0.1em;
 }
 
 .hero-btn:hover {
@@ -57,7 +156,8 @@ header {
     color:var(--graphite);
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -76,25 +176,11 @@ header {
     
 /* } */
 
-nav {
-    color: var(--white-text);
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-}
-
-.main-title {
-    color:var(--white-text);
-    font-weight: 700;
-    font-size: 72px;
-    line-height: 85px;
-    font-family: 'Raleway', sans-serif;
-}
-
 .hero-motto {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
+    letter-spacing: 0.02em;
 }
 
 .section-paragraph {
@@ -109,6 +195,8 @@ nav {
     font-weight: 600;
     font-size: 11px;
     line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 .paragraph-caps-grey {
@@ -199,7 +287,11 @@ nav {
     background: transparent;
 }
 
-
+.sign-online:hover,
+.sign-online:focus {
+  background-color: var(--orange-text);
+  color: var(--white-text);
+}
 
 .sign-online-black {
     color:var(--graphite);
@@ -218,10 +310,13 @@ nav {
     text-transform: uppercase;
     background: transparent;
 }
-.sign-online-black:hover {
-    background-color:var(--orange-text);
+.sign-online-black:hover,
+.sign-online-black:focus {
+  background-color: var(--orange-text);
+  color: var(--white-text);
 }
-.message-box {
+
+/* .message-box {
     color:var(--grey-text-op40);
     background: transparent;
     border: none;
@@ -229,8 +324,32 @@ nav {
     font-weight: 600;
     font-size: 11px;
     line-height: 15px;
+} */
+
+.signform input::placeholder,
+.signform textarea::placeholder {
+  color: var(--grey-text-op40);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  background: transparent;
 }
 
+.signform input,
+.signform textarea {
+  color: var(--grey-text-op40);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--grey-text-op40);
+}
+
+.signform input:active,
+.signform textarea:active {
+  color: var(--white-text);
+  background: transparent;
+}
 
 .adr-btn {
     color:var(--grey-text);
@@ -270,4 +389,4 @@ nav {
     line-height: 15px;
     font-family: 'Open Sans', sans-serif;
 }
-jjj
+

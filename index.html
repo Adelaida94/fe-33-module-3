@@ -14,38 +14,38 @@
 <body>
     <header class="header"><!-- <header style="background-color: aliceblue;"> -->
         <div class="container">
-            <nav class="nav">
+            <nav class="header-nav">
                 <a href="#" >
                     <img src="./images/Logo.svg" alt="Лого" > 
                 </a>
-                <ul>
+                <ul class="nav-list">
                     <li>
-                        <a class="header-item" href="#about">О нас</a>
+                        <a href="#about" class="nav-link current">О нас</a>
                     </li>
                     <li>
-                        <a class="header-item"  href="#prices">Услуги и цены</a>
+                        <a  href="#prices" class="nav-link">Услуги и цены</a>
                     </li>
                     <li>
-                        <a class="header-item" href="#workers">Наши мастера</a>
+                        <a href="#workers" class="nav-link">Наши мастера</a>
                     </li>
                     <li>
-                        <a class="header-item" href="#contacts">Контакты</a>
+                        <a href="#contacts" class="nav-link">Контакты</a>
                     </li>
                 </ul>
-                <ul>
+                <ul class="contact-list">
                     <li>
-                        <a class="header-item" href="tel:+380441111111">+38 044 111 11 11</a>
+                        <a href="tel:+380441111111" class="nav-link">+38 044 111 11 11</a>
                     </li>
                     <li> 
-                        <a class="sign-online" href="#">ОНЛАЙН-ЗАПИСЬ</a>
+                        <a class="sign-online-black" href="#">ОНЛАЙН-ЗАПИСЬ</a>
                     </li>
                 </ul>
-                <ul>
+                <ul class="social-netw">
                     <li>
-                        <a class="header-item" href="#">Instagram</a>
+                        <a href="#" class="nav-link-sn">Instagram</a>
                     </li>
                     <li>
-                        <a class="header-item" href="#">YouTube</a>
+                        <a href="#" class="nav-link-sn">YouTube</a>
                     </li>
                 </ul>
             </nav>
@@ -54,7 +54,7 @@
     <main>
         <section class="hero">
             <div class="container">
-                <p>A HAIR SALON FOR MEN IN KYIV</p>
+                <p class="pretitle">A HAIR SALON FOR MEN IN KYIV</p>
                 <h1 class="main-title">BarberShop</h1>
                 <p class="hero-motto">Мы эксперты в модных мужских стрижках.<br> Работаем быстро, осторожно и со вкусом.</p>
                 <button class="hero-btn">Назад</button>
@@ -205,12 +205,12 @@
            <div class="container">
                 <div>
                     <h2 class="title-prices">Онлайн-запись</h2>
-                    <form class="message-box">
-                        <input  type="text" name="name" id="name" placeholder="ИМЯ*">
-                        <input  type="tel" name="tel" id="tel" placeholder="ТЕЛЕФОН*">
-                        <textarea  name="msg" id="" cols="30" rows="10" placeholder="СООБЩЕНИЕ"></textarea>
-                        <button class="sign-online">ОТПРАВИТЬ</button>
-                    </form>
+                    <form class="signform">
+                        <input type="text" name="name" id="name" placeholder="имя*">
+                        <input type="tel" name="tel" id="tel" placeholder="телефон*">
+                        <textarea name="msg" id="msg" cols="20" rows="3" placeholder="сообщение"></textarea>
+                        <button type="submit" class="online-sign">отправить</button>
+                      </form>
                 </div>
                 <div id="contacts">
                     <h2 class="title-prices">Контакты</h2>
@@ -231,14 +231,16 @@
         <!-- <p>&#xa9; </p> -->
        <div class="container"> 
             <p class="copy">&copy; Copyright 2020</p>
-            <ul>
+            <ul class="social-netw-footer">
                 <li>
-                    <a class="social-netw" href="#">Instagram</a>
+                    <a class="nav-link-sn" href="#">Instagram</a>
                 </li>
                 <li>
-                    <a class="social-netw" href="#">YouTube</a>
+                    <a class="nav-link-sn" href="#">YouTube</a>
                 </li>
             </ul>
+        
+        
         </div>
     </footer>
 </body>
