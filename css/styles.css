@@ -57,6 +57,13 @@ body {
 
 .social-netw {
     position: absolute;
+    bottom: -399px;
+    transform: rotate(-90deg);
+    z-index:2;
+}
+.social-netw li {
+    margin-left:40px;
+    
 }
 
 .nav-list li {
@@ -115,15 +122,16 @@ body {
     background:transparent;
 }
 
-.contact-list {
+/* .contact-list {
     margin-left: 322px;
-}
+} */
 
 
 .hero .container {
     background:black;
     color:var(--grey-text-op60);
     padding-left: 215px;
+    /* padding-bottom:206px; */
 
 }
 .pretitle {
@@ -133,16 +141,24 @@ body {
     line-height: 15px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    padding-top: 184px;
 }
 
 .main-title {
     color:var(--white-text);
+    margin: 20px 0;
     font-weight: 700;
     font-size: 72px;
     line-height: 85px;
     font-family: 'Raleway', sans-serif;
     line-height: 85px;
     letter-spacing: 0.05em;
+}
+
+.hero-btns {
+    text-align:right;
+    margin-top: 142px;
+    padding-bottom: 40px;   
 }
 
 .hero-btn {
@@ -153,6 +169,20 @@ body {
     font-size: 11px;
     line-height: 15px;
     letter-spacing: 0.1em;
+    width: 60px;
+    height: 24px;
+    border-bottom: 1px solid;
+    text-transform: capitalize; /* --ЗАГЛАВНАЯ БУКВА-- */
+} 
+
+.hero-btn:last-child {
+    margin-left: 26px;
+    margin-right: 55px;
+    text-align: right;
+}
+
+.hero-btn:first-child {
+    text-align: left;
 }
 
 .hero-btn:hover {
@@ -190,11 +220,52 @@ body {
     letter-spacing: 0.02em;
 }
 
-.section-paragraph {
+pre {
+    display:block;
+}
+
+.about .container {
+    display: flex;
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.about-images {
+    display: flex;
+    margin-right: 64px;
+    margin-bottom: 130px;
+    width: 50%;
+}
+
+.about-images li:first-child {
+    margin-right: 30px;
+}
+
+.about-title {
+    color:var(--graphite);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    margin: 20px 0;
+}
+
+.desc-paragraph {
     color:var(--light-graphite);
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.about-paragraph{
+    color: var(--light-graphite);
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.02em;
 }
 
 .paragraph-caps {
@@ -219,6 +290,14 @@ body {
     font-size: 14px;
     line-height: 26px;
     font-family: 'Open Sans', sans-serif;
+}
+
+.section-paragraph {
+    color:var(--light-graphite);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
 }
 
 .title-prices {
