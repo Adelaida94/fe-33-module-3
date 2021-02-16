@@ -268,8 +268,89 @@ pre {
     letter-spacing: 0.02em;
 }
 
+.section-prices .container {
+    background-color: black;
+    display:flex;
+    flex-flow:column;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.table-wrapper {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.table-prices {
+    color:var(--grey-text);
+    padding: 30px 40px;
+    border: 1px solid white;
+    width:50%;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+}
+
+.table-prices tr {
+margin-bottom: 20px;
+}
+
+.section-prices .sign-online {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.oldschool .container {
+    display: flex;
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.showlist {
+    border: ;
+    display:flex;
+    flex-flow:row wrap;
+    width:370px;
+    height:300px;
+}
+
+.oldschool .title {
+    margin-bottom: 20px;
+}
+
+.showlist li {
+    background: var(--back-light-grey);
+    width:170px;
+    height:133px;
+}
+
+/* С П О С О Б - № 1 - */
+/* .showlist li:nth-child(1) {
+    margin-right:30px;
+}
+
+.showlist li:nth-child(3) {
+    margin-right:30px;
+} */
+
+/*  С П О С О Б - № 2 - */
+.showlist li:nth-child(2n + 1) {
+    margin-right:30px; 
+    margin-bottom:30px;
+}
+
+.showlist li:nth-child(2n + 2) { 
+    margin-top:30px;
+}
+
 .paragraph-caps {
     color:var(--graphite);
+    margin-bottom:20px;
     font-weight: 600;
     font-size: 11px;
     line-height: 15px;
@@ -279,9 +360,12 @@ pre {
 
 .paragraph-caps-grey {
     color:var(--grey-text-op60);
+    margin-bottom: 20px;
     font-weight: 600;
     font-size: 11px;
     line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 .paragraph {
@@ -302,10 +386,12 @@ pre {
 
 .title-prices {
     color:var(--white-text);
+    margin-bottom:44px;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.05em;
 }
 
 .prices {
